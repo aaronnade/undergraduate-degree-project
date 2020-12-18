@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="毕业设计.main1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .location {
+            border: 1px solid #C0C0C0;
+            background-position: 20px 10px;
+            height: 40px;
+            width: 100%;
+            background-image: url('/images/location.png');
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            text-align: left;
+            text-indent: 50px;
+            line-height: 40px;
+        }
+
+        .panding {
+            padding: 10px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <form id="form1" runat="server">
+        <div class="panding">
+            <div class="location">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server" SiteMapProvider="XmlSiteMapProvider">
+                </asp:SiteMapPath>
+            </div>
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

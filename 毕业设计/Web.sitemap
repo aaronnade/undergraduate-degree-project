@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/backGroundAdmin/main.aspx" title="主页"  description="">
+    <siteMapNode title="系统管理">
+      <siteMapNode url="~/userManage.aspx" title="用户管理"  description="" />
+      <siteMapNode url="~/userGroupManageNew.aspx" title="用户组管理"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
